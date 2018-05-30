@@ -1,6 +1,3 @@
-body {
-  min-height: 3000px;
-}
 
 /* 
    =================
@@ -55,19 +52,29 @@ a {
 */
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Karla', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 header h2,
 nav,
-p {
+p,
+small {
   font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
   font-weight: 400;
 }
 
 p {
   color: var(--blue);
+}
+
+h3 {
+  font-weight: 200;
+}
+small {
+  margin-top: 0px;
+  display: block;
 }
 
 /*
@@ -78,7 +85,7 @@ p {
 
 nav {
   position: fixed;  
-  top: 24px;
+  top: 0;
   right: 0;
 }
 
@@ -112,6 +119,12 @@ header hr {
   padding: 6rem;
 }
 
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
 /*
    =================
    Section Headings
@@ -122,4 +135,31 @@ header hr {
   line-height: 4rem;
   text-underline-position: under;
   text-decoration: solid underline var(--blue3);
+}
+
+/*
+   =================
+   Social 
+   =================
+*/
+
+.social a {
+  display: inline-block;
+  width: 48px;
+}
+
+/*
+   =================
+   Footer 
+   =================
+*/
+
+footer {
+  width: 100%;
+}
+
+.footer-block {
+  width: 11.11%;
+  height: 48px;
+  float: left;
 }

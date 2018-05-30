@@ -1,0 +1,35 @@
+:root {
+  --blue: #062437;
+  --blue0: #f9f9fa;
+  --blue1: #ebeeef;
+  --blue2: #dde1e4;
+  --blue3: #ced4d8;
+  --blue4: #bdc5ca;
+  --blue5: #aab4bb;
+  --blue6: #95a2aa;
+  --blue7: #7c8b95;
+  --blue8: #5b6f7b;
+  --blue9: #284253
+}
+.blue { color: var(--blue) }
+.blue0 { color: var(--blue0) }
+.blue1 { color: var(--blue1) }
+.blue2 { color: var(--blue2) }
+.blue3 { color: var(--blue3) }
+.blue4 { color: var(--blue4) }
+.blue5 { color: var(--blue5) }
+.blue6 { color: var(--blue6) }
+.blue7 { color: var(--blue7) }
+.blue8 { color: var(--blue8) }
+.blue9 { color: var(--blue9) }
+.bg-blue { background-color: var(--blue) }
+.bg-blue0 { background-color: var(--blue0) }
+.bg-blue1 { background-color: var(--blue1) }
+.bg-blue2 { background-color: var(--blue2) }
+.bg-blue3 { background-color: var(--blue3) }
+.bg-blue4 { background-color: var(--blue4) }
+.bg-blue5 { background-color: var(--blue5) }
+.bg-blue6 { background-color: var(--blue6) }
+.bg-blue7 { background-color: var(--blue7) }
+.bg-blue8 { background-color: var(--blue8) }
+.bg-blue9 { background-color: var(--blue9) }

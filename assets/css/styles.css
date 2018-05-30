@@ -1,3 +1,7 @@
+body {
+  min-height: 3000px;
+}
+
 /* 
    =================
    Color Palette
@@ -40,8 +44,9 @@
 .bg-blue8 { background-color: var(--blue8) }
 .bg-blue9 { background-color: var(--blue9) }
 
-body {
-  min-height: 3000px;
+p,
+a {
+  color: var(--blue);
 }
 
 /* =================
@@ -49,14 +54,20 @@ body {
    =================
 */
 
-h1 {
+h1,
+h2 {
   font-family: 'Karla', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-h2,
-nav {
+header h2,
+nav,
+p {
   font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
   font-weight: 400;
+}
+
+p {
+  color: var(--blue);
 }
 
 /*
@@ -79,7 +90,6 @@ nav {
 
 header {
   margin-top: 12rem;
-  padding: 6rem;
 }
 header h1,
 header h2 {
@@ -90,3 +100,26 @@ header hr {
   border: 1px solid var(--blue1);
 }
 
+/* 
+   =================
+   Container
+   =================
+*/
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem;
+}
+
+/*
+   =================
+   Section Headings
+   =================
+*/
+
+.shead {
+  line-height: 4rem;
+  text-underline-position: under;
+  text-decoration: solid underline var(--blue3);
+}

@@ -9,17 +9,19 @@
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body id="home">
 
-  <! -- Navigation -->
+  <!-- Navigation -->
+  <!-- http://tachyons.io/components/nav/title-link-list/index.html -->
   <nav class="pa3 pa4-ns">
-    <a class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-    <a class="link dim blue9 f6 f5-ns dib mr3" href="#" title="About">About</a>
-    <a class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Projects">Projects</a>
-    <a class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Work">Work</a>
-    <a class="link dim blue9 f6 f5-ns dib" href="#" title="Contact">Contact</a>
+    <a id="home-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+    <a id="about-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="About">About</a>
+    <a id="projects-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Projects">Projects</a>
+    <a id="work-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Work">Work</a>
+    <a id="contact-btn" class="link dim blue9 f6 f5-ns dib" href="#contact" title="Contact">Contact</a>
   </nav>
- 
+
+  <div class="container">
   <!-- Header -->
   <header>
     <h1 class="f2 blue9">Nicholas Morera</h1>
@@ -28,12 +30,82 @@
   </header>
 
   <!-- About -->
+  <h2 id="about" class="blue8 f2 mt5 shead">About</h2>
+
+  <p>Lorem ipsum dolor sit amet, ex lorem dolorum vituperata mel. Ei quis conceptam eum, errem inermis mnesarchum qui ne, eum in modus noster. Has commodo malorum conceptam te, ad his reque disputando. Cum eu unum nihil facilis, esse hendrerit ei his. Cu sit tale laudem, vidisse aliquid graecis et nec. Nam in laboramus scriptorem, eu admodum vituperata sed.</p>
+
+  <p>Cum aliquip interesset et, ut vix iuvaret vulputate, an mazim reprehendunt vim. Ut eos vivendo indoctum imperdiet, ad utinam antiopam sed, in alienum salutandi sed. Has et omnis dicunt, te mei percipit gloriatur incorrupte. Ius ne assentior adipiscing moderatius. Semper doctus dissentiet ne quo.</p>
+
+  <p>Ad duo nostrud honestatis. Bonorum noluisse temporibus eum ea, justo voluptua dissentiunt nec ea. Dicam tacimates mea cu, sed discere ponderum neglegentur at. Mea ea maiorum apeirian nominati, ea platonem erroribus sea. Sale mazim docendi his et, in enim dicant quo, et vitae intellegam vel. Eos id zril civibus, duo ad nullam feugiat saperet.</p>
+
+  <p>Ius id agam interpretaris. Duis epicuri ea sed. Pro alia minim accommodare ne, sed aeterno feugait an. Eos et rebum dictas, at vix urbanitas posidonium comprehensam. Vim ne alii accusamus, omnis qualisque vel et.</p>
+
+  <p>Quas solum latine ne his, ex his liber equidem periculis.</p>
 
   <!-- Projects -->
+  <h2 id="projects" class="blue8 f2 mt5 shead">Projects</h2>
 
   <!-- Work -->
+  <h2 id="work" class="blue8 f2 mt5 shead">Work</h2>
 
   <!-- Contact -->
-  
+  <h2 id="contact" class="blue8 f2 mt5 shead">Contact</h2>
+
+  <p class="pt0"><a href="mailto:morera.computer@gmail.com">morera.computer@gmail.com</a></p>
+
+  </div>
+  <script>
+    // smooth scroll
+    // http://iamdustan.com/smoothscroll/
+    // add event listener on load
+    window.addEventListener('load', function() {
+      
+      document.querySelector('#home-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('#home').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+      });
+
+      document.querySelector('#about-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('#about').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+      });
+
+      document.querySelector('#projects-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('#projects').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+      });
+
+      document.querySelector('#work-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('#work').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+      });
+
+      document.querySelector('#contact-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('#contact').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+      });
+
+    });
+  </script>
 </body>
 </html>

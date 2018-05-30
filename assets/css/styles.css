@@ -1,3 +1,9 @@
+/* 
+   =================
+   Color Palette
+   =================
+*/
+
 :root {
   --blue: #062437;
   --blue0: #f9f9fa;
@@ -33,3 +39,54 @@
 .bg-blue7 { background-color: var(--blue7) }
 .bg-blue8 { background-color: var(--blue8) }
 .bg-blue9 { background-color: var(--blue9) }
+
+body {
+  min-height: 3000px;
+}
+
+/* =================
+   Typography
+   =================
+*/
+
+h1 {
+  font-family: 'Karla', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h2,
+nav {
+  font-family: "Inconsolata", "Lucida Console", Monaco, monospace;
+  font-weight: 400;
+}
+
+/*
+   =================
+   Navigation
+   =================
+*/
+
+nav {
+  position: fixed;  
+  top: 24px;
+  right: 0;
+}
+
+/* 
+   =================
+   Header
+   =================
+*/
+
+header {
+  margin-top: 12rem;
+  padding: 6rem;
+}
+header h1,
+header h2 {
+  line-height: 1rem;
+}
+header hr {
+  margin-top: 4rem;
+  border: 1px solid var(--blue1);
+}
+

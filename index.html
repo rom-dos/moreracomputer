@@ -9,22 +9,23 @@
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
   </head>
 <body id="home">
 
   <!-- Navigation -->
   <!-- http://tachyons.io/components/nav/title-link-list/index.html -->
-  <nav class="pa3 pa4-ns link-braces">
+  <nav id="navbar" class="pa3 pa4-ns link-braces">
     <a id="home-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-    <a id="about-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="About">About</a>
-    <a id="projects-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Projects">Projects</a>
-    <a id="work-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Work">Work</a>
+    <a id="about-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#about" title="About">About</a>
+    <a id="projects-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#projects" title="Projects">Projects</a>
+    <a id="work-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#work" title="Work">Work</a>
     <a id="contact-btn" class="link dim blue9 f6 f5-ns dib" href="#contact" title="Contact">Contact</a>
   </nav>
 
   <div class="container">
   <!-- Header -->
-  <header class="pb5">
+  <header id="welcome-section" class="pb5">
     <h1 class="f2-ns f3 blue9">Nicholas Morera</h1>
     <h2 class="f4-l f5-m f5 blue7 mw6 lh-slid-ns pb2 lh-copy">Developer & Designer 💾</h2>
     <div class="footer-block bg-blue0"></div>
@@ -59,22 +60,26 @@
   -->
 
   <!-- Projects -->
-  <h2 id="projects" class="blue8 f2 mt5 shead">Projects</h2>
+  <div id="projects">
+  <h2 class="blue8 f2 mt5 shead">Projects</h2>
 
-  <h3 id="burial" class="blue9 f3-m f4">Burial</h3>
-  <img class="w-100" src="assets/img/burial.png" alt="Burial screenshot">
-  <p>Infosite on electronic musician and producer, Burial</p>
-  <small>HTML, CSS, jQuery</small>
-  <p><a href="https://github.com/rom-dos/burial" target="_blank">Source</a> | <a href="https://rom-dos.github.io/burial/" target="_blank">Site</a></p>
+  <div class="project-tile">
+    <h3 id="burial" class="blue9 f3-m f4">Burial</h3>
+    <img class="w-100" src="assets/img/burial.png" alt="Burial screenshot">
+    <p>Infosite on electronic musician and producer, Burial</p>
+    <small>HTML, CSS, jQuery</small>
+    <p><a href="https://github.com/rom-dos/burial" target="_blank">Source</a> | <a href="https://rom-dos.github.io/burial/" target="_blank">Site</a></p>
+    <br />
+  </div>
 
-  <br />
+  <div class="project-tile">
+    <h3 id="movie-log" class="blue9 f3-m f4">movie-log</h3>
+    <img class="w-100" src="assets/img/movie-log.png" alt="movie-log">
+    <p>Database of films watched / to watch</p>
+    <small>HTML, CSS</small>
+    <p><a href="https://github.com/rom-dos/movie-log" target="_blank">Source</a> | <a href="https://rom-dos.github.io/movie-log/" target="_blank">Site</a></p>
+  </div>
 
-  <h3 id="movie-log" class="blue9 f3-m f4">movie-log</h3>
-  <img class="w-100" src="assets/img/movie-log.png" alt="movie-log">
-  <p>Database of films watched / to watch</p>
-  <small>HTML, CSS</small>
-  <p><a href="https://github.com/rom-dos/movie-log" target="_blank">Source</a> | <a href="https://rom-dos.github.io/movie-log/" target="_blank">Site</a></p>
-  
   <!-- 
   <h3 id="jungle-kit" class="blue9 f3-m f4">jungle-kit</h3>
   <img class="w-100" src="assets/img/movie-log.png" alt="movie-log">
@@ -82,8 +87,9 @@
   <small>HTML, CSS, JavaScript</small>
   <p><a href="https://github.com/rom-dos/movie-log" target="_blank">Source</a> | <a href="https://rom-dos.github.io/movie-log/" target="_blank">Site</a></p>
   -->
+  </div>
 
-  <!-- Work -->
+    <!-- Work -->
   <h2 id="work" class="blue8 f2 mt5 shead">Work</h2>
   
   <h3 class="blue9 f4"><a href="https://sunlightmedia.org" target="_blank">Sunlight Media</a></h3>
@@ -125,7 +131,7 @@
   <h2 id="contact" class="blue8 f2 mt5 shead cb">Contact</h2>
 
   <div class="social">
-	  <a href="https://github.com/rom-dos" target="_blank"><i class="fab fa-github f2 blue9"></i></a>
+	  <a id="profile-link" href="https://github.com/rom-dos" target="_blank"><i class="fab fa-github f2 blue9"></i></a>
 	  <a href="https://twitter.com/moreracomputer" target="_blank"><i class="fab fa-twitter f2 blue9"></i></a>
   
   </div>

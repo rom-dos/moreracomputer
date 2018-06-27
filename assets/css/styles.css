@@ -136,6 +136,14 @@ small {
    =================
 */
 
+#nav-container {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  min-height: 80px;
+  width: 100%;
+}
+
 nav {
   position: fixed;  
   top: 0;

@@ -1,4 +1,3 @@
-
 /* 
    =================
    Color Palette
@@ -201,9 +200,10 @@ header hr {
 */
 
 .shead {
-  line-height: 4rem;
-  text-underline-position: under;
-  text-decoration: solid underline var(--blue3);
+  line-height: 2.8rem;
+  padding-bottom: -40px !important;
+  border-bottom: 4px solid var(--blue4);
+  display: inline-block;
 }
 
 /*

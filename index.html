@@ -16,7 +16,7 @@
   <!-- http://tachyons.io/components/nav/title-link-list/index.html -->
   <div id="nav-container">
     <nav id="navbar" class="pa3 pa4-ns link-braces">
-      <a id="home-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+      <a id="home-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#main-container" title="Home">Home</a>
       <a id="about-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#about" title="About">About</a>
       <a id="projects-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#projects" title="Projects">Projects</a>
       <a id="work-btn" class="link dim blue9 f6 f5-ns dib mr3" href="#work" title="Work">Work</a>
@@ -24,7 +24,7 @@
     </nav>
   </div>
 
-  <div class="container">
+  <div id="main-container" class="container">
   <!-- Header -->
   <header id="welcome-section" class="pb5">
     <h1 class="f2-ns f3 blue9">Nicholas Morera</h1>
@@ -240,10 +240,7 @@
                                                                                                                                                       
   
   </pre>
-
-
   <!--
-  <pre>
    ____ ____ ____ ____ ____ _________ ____ ____ ____                
   ||T |||h |||a |||n |||k |||       |||y |||o |||u ||               
   ||__|||__|||__|||__|||__|||_______|||__|||__|||__||               
@@ -252,9 +249,8 @@
   ||F |||o |||r |||       |||v |||i |||s |||i |||t |||i |||n |||g ||
   ||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__|||__|||__||
   |/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
-  </pre>
+
   -->
-  
   <footer>
     <div class="footer-block bg-blue0"></div>
     <div class="footer-block bg-blue1"></div>
@@ -266,60 +262,7 @@
     <div class="footer-block bg-blue7"></div>
     <div class="footer-block bg-blue8"></div>
   </footer>
-
-  <script>
-    // smooth scroll
-    // http://iamdustan.com/smoothscroll/
-
-    // add event listener on load
-    window.addEventListener('load', function() {
-      
-      document.querySelector('#home-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector('#home').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-        });
-      });
-
-      document.querySelector('#about-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector('#about').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-        });
-      });
-
-      document.querySelector('#projects-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector('#projects').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-        });
-      });
-
-      document.querySelector('#work-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector('#work').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-        });
-      });
-
-      document.querySelector('#contact-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector('#contact').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-        });
-      });
-
-    });
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -45,6 +45,12 @@ a {
   color: var(--blue);
 }
 
+.spectrum-block {
+  width: 11.11%;
+  height: 48px;
+  float: left;
+}
+
 /* =================
    Typography
    =================
@@ -262,12 +268,6 @@ pre {
 
 footer {
   width: 100%;
-}
-
-.footer-block {
-  width: 11.11%;
-  height: 48px;
-  float: left;
 }
 
 /*

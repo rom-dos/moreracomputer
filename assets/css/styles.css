@@ -241,6 +241,16 @@ small.work-desc {
    =================
 */
 
+#samurai-castle {
+  margin: 0 auto 1rem auto;
+  display: block;
+  font-size: 2rem;
+  max-width: 20px;
+}
+#samurai-castle:hover {
+  transform: scale(1.2);
+}
+
 pre {
   /* margin: 0 auto; */
   padding: 0.8rem;

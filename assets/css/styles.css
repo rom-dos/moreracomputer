@@ -15,7 +15,7 @@
   --blue6: #95a2aa;
   --blue7: #7c8b95;
   --blue8: #5b6f7b;
-  --blue9: #284253
+  --blue9: #284253;
 }
 .blue { color: var(--blue) }
 .blue0 { color: var(--blue0) }

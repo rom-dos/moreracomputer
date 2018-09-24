@@ -47,7 +47,7 @@ a {
 
 .spectrum-block {
   width: 11.11%;
-  height: 48px;
+  height: 24px;
   float: left;
 }
 
@@ -142,10 +142,30 @@ small {
    =================
 */
 
+#nav-container:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 400px;
+  background: var(--blue1);
+  z-index: -1;
+
+  -webkit-transform: skewY(6.3deg);
+     -moz-transform: skewY(6.3deg);
+      -ms-transform: skewY(6.3deg);
+       -o-transform: skewY(6.3deg);
+          transform: skewY(6.3deg);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: initial;
+}
+
 #nav-container {
   position: fixed;
   top: 0;
-  background-color: white;
   min-height: 80px;
   width: 100%;
 }
@@ -287,6 +307,18 @@ footer {
   }
   nav {
     top: 1.2rem;  
+  }
+  #nav-container:before {
+    height: 500px;
+    top: -380px;
+    -webkit-transform: skewY(4.3deg);
+       -moz-transform: skewY(2.3deg);
+        -ms-transform: skewY(2.3deg);
+         -o-transform: skewY(2.3deg);
+            transform: skewY(8.3deg);
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: initial;
   }
 }
 

@@ -257,6 +257,10 @@ header hr {
   display: inline-block;
 }
 
+#projects {
+  margin-top: 60px;
+}
+
 /*
    =================
    Work 

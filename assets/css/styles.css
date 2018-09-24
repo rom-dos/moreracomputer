@@ -169,6 +169,21 @@ small {
   min-height: 80px;
   width: 100%;
   z-index: 1;
+  animation-name: fade-in;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    top: 800px;
+    min-height: 2000px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+    min-height: 80px;
+  }
 }
 
 nav {

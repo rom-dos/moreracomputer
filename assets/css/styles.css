@@ -276,6 +276,19 @@ header hr {
   margin-top: 60px;
 }
 
+.project-tile h3 {
+  display: inline-block;
+  border: 1px dashed var(--blue4);
+  padding: 0.6rem;
+}
+
+
+.project-tile img {
+  border-radius: 4px;
+  box-shadow: 6px 14px 12px var(--blue5);
+  margin-bottom: 2rem;
+}
+
 /*
    =================
    Work 

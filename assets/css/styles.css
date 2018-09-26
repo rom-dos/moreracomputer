@@ -289,6 +289,12 @@ header hr {
   margin-bottom: 2rem;
 }
 
+.stats {
+  margin-top: 1rem;
+  color: var(--blue8);
+  text-shadow: 1px 4px 1px var(--blue2);
+}
+
 /*
    =================
    Work 

@@ -334,6 +334,15 @@ header hr {
 }
 .imgContainer {
   min-height: 310px;
+  position: relative;
+  opacity: 1;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  transform: scale(1);
+}
+.imgContainer:hover {
+  top: -4px;
+  transform: scale(1.01);
 }
 
 .stats {

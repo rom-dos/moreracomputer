@@ -51,6 +51,36 @@ a {
   float: left;
 }
 
+.langColorSpan {
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+  width: 16px;
+  margin-top: 12px;
+}
+
+.js {
+  background-color: #f1e05a;
+}
+.css {
+  background-color: #563d7c;
+}
+.html {
+  background-color: #e34d32;
+}
+.shell {
+  background-color: #89e051;
+}
+.lilypond {
+  background-color: #cccccc;
+}
+.default-color {
+  background-color: #cccccc;
+}
+
 /* =================
    Typography
    =================
